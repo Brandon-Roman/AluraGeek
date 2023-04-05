@@ -1,0 +1,17 @@
+.footer{
+    background: #ffffff;
+    font-family: raleway;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 10px;
+}
+
+.footer__texto{
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}

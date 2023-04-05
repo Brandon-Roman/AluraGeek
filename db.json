@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "imagen": "json-server",
+      "categoria": "typicode",
+      "nombreProducto": "typicode",
+      "precio": "typicode",
+      "mensaje": "typicode",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "brindon"
+  }
+}

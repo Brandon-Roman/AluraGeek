@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>AluraGeek-Agregar-Producto</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/agregar-producto.css">
+        <link rel="stylesheet" href="../css/contacto.css">
+        <link rel="stylesheet" href="../css/footer.css">
+    </head>
+          <section class="header">
+            <header class="header__logo">
+              <img class="header__img" src="../img/Logo (1).png" alt="logo AluraGeek">
+            </header>
+              <input class="input__buscador" type="text" placeholder="¿Qué deseas buscar?" name="nombre" required pattern="^(?!.*[!@#$%^&*_=+-]).{1,50}$"  data-tipo="buscador">
+              <button class="header__buscar"><a href="###"><img class="header__buscar--img" src="../img/Icone.png"></a></button>
+              <body> <a href="#####"><button class="boton__administrador">Menú Administrador</button></a>
+            <button class="header__buscar--mobile"><img class="header__buscar--img" src="../img/Icone.png"></button>
+          </section>
+              <section class="formulario">
+                <form class="formulario__container">
+                    <legend class="formulario__titulo">Agregar nuevo producto</legend>
+                    <fieldset>
+                    <div class="formulario__caja">
+                        <input class="formulario__input" type="text"  name="imagen" required data-tipo="imagen">
+                        <label class="formulario__label">URL de la imagen</label>
+                        <span class="span-error"></span>
+                    </div>
+                    <div class="formulario__caja">
+                        <input class="formulario__input" type="text"  name="categoria" required pattern="^(?!.*[!@#$%^&*_=+-]).{1,50}$"  data-tipo="categoria">
+                        <label class="formulario__label">Categoria</label>
+                        <span class="span-error"></span>
+                    </div>
+                    <div class="formulario__caja">
+                        <input class="formulario__input" type="text"  name="nombreProdcuto" required pattern="^(?!.*[!@#$%^&*_=+-]).{1,20}$"  data-tipo="nombreProducto">
+                        <label class="formulario__label">Nombre del producto</label>
+                        <span class="span-error"></span>
+                    </div>
+                    <div class="formulario__caja">
+                        <input class="formulario__input" type="number"  name="precio" required pattern="^(?!.*[!@#%^&*_=+-]).{1,50}$"  data-tipo="precio">
+                        <label class="formulario__label">Precio del producto</label>
+                        <span class="span-error"></span>
+                    </div>
+                    <div class="formulario__caja">
+                        <textarea class="formulario__textarea"  id="mensaje" name="mensaje" placeholder="" required pattern="^(?!.*[!@#$%^&*_=+-]).{4,50}$" data-tipo="mensaje" ></textarea>
+                        <label class="textarea__label">Descripción del producto</label>
+                        <span class="span-error span-error--agregar"></span>
+                    </div>
+                    <button class="formulario__boton">Agregar producto</button>
+                </fieldset>
+                </form>
+              </section>
+              <section class="contacto">
+                <div class="contacto__container">
+                  <img class="contacto__logo--pc" src="../img/Logo (1).png" alt="Logo AluraGeek">
+                  <div class="contacto__caja">
+                    <img class="contacto__logo" src="../img/Logo (1).png" alt="Logo AluraGeek">
+                    <ul class="contacto__lista">
+                      <li class="contacto__item"><a class="contacto__link" href="">Quienes somos</a></li>
+                      <li class="contacto__item"><a class="contacto__link" href="">Politica de privacidad</a></li>
+                      <li class="contacto__item"><a class="contacto__link" href="">Programa de fidelidad</a></li>
+                      <li class="contacto__item"><a class="contacto__link" href="">Nuestras tiendas</a></li>
+                      <li class="contacto__item"><a class="contacto__link" href="">Quiero ser Franquiciado</a></li>
+                      <li class="contacto__item"><a class="contacto__link" href="">Quiero ser Franquiciado</a></li>
+                      <li class="contacto__item"><a class="contacto__link" href="">Anúncie aqui</a></li>
+                    </ul>
+                  </div>
+                  <div class="formulario__hable">
+                    <form class="contacto__form">
+                      <legend class="contacto__titulo">Hable con nosotros</legend>
+                      <fieldset class="contacto__form--caja">
+                        <div class="contacto__formulario">
+                          <input class="contacto__input" type="text" name="nombre" placeholder="Nombre" required pattern="^(?!.*[!@#$%^&*_=+-]).{4,50}$"  data-tipo="nombre">  
+                          <span class="span-error"></span> 
+                        </div>
+                        <div class="contacto__formulario">
+                          <textarea class="formulario__textarea formulario__textarea--contacto"  id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required pattern="^(?!.*[!@#$%^&*_=+-]).{4,50}$" data-tipo="mensaje"></textarea>
+                          <span class="span-error"></span> 
+                        </div>
+                      </fieldset>
+                  <button type="submit" class="contato__boton">Enviar mensaje</button>
+                    </form>
+                  </div>
+                </div>
+              </section>
+              <section class="footer">
+                <p class="footer__texto">Desarrollado por Román Sánchez Brandon Yovani 2023</p>
+              </section>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+              <script src="../js/app.js" type="module"></script>
+              <script type="module" src="../controllers/registro-producto.js"></script>
+              <
+        </body>
+</html>
